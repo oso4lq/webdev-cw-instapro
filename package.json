@@ -1,0 +1,18 @@
+{
+  "name": "webdev-cw-instapro",
+  "version": "1.0.0",
+  "description": "instapro project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oso4lq/webdev-cw-instapro.git"
+  },
+  "author": "OsO4",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}
