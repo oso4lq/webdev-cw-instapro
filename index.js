@@ -48,7 +48,6 @@ export const goToPage = (newPage, data) => {
     ].includes(newPage)
   ) {
     if (newPage === ADD_POSTS_PAGE) {
-      // Если пользователь не авторизован, то отправляем его на авторизацию перед добавлением поста
       page = user ? ADD_POSTS_PAGE : AUTH_PAGE;
       return renderApp();
     }
@@ -103,7 +102,7 @@ export const goToPage = (newPage, data) => {
 
     return;
   }
-  throw new Error("страницы не существует");
+  throw new Error("page doesn't exist");
 };
 
 export const renderApp = () => {
@@ -136,7 +135,7 @@ export const renderApp = () => {
         // Add post to API
         /*console.log("Добавляю пост...", { description, imageUrl });
         goToPage(POSTS_PAGE);*/
-        console.log("Добавляю пост...", { description, imageUrl });
+        console.log("Adding post...", { description, imageUrl });
         addPost({
           description,
           imageUrl,
