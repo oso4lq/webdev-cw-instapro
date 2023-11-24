@@ -70,18 +70,6 @@ export const goToPage = (newPage, data) => {
 
     if (newPage === USER_POSTS_PAGE) {
       // Get user posts from API
-      /*
-      console.log("Открываю страницу пользователя: ", data.userId);
-      page = USER_POSTS_PAGE;
-      posts = [];
-      return renderApp();
-    }
-    page = newPage;
-    renderApp();
-    return;
-  }
-  throw new Error("страницы не существует");
-  */
       page = LOADING_PAGE
       renderApp()
       const userId = data.userId
@@ -133,8 +121,6 @@ export const renderApp = () => {
       appEl,
       onAddPostClick({ description, imageUrl }) {
         // Add post to API
-        /*console.log("Добавляю пост...", { description, imageUrl });
-        goToPage(POSTS_PAGE);*/
         console.log("Adding post...", { description, imageUrl });
         addPost({
           description,
