@@ -1,15 +1,15 @@
 # Instapro
 
-MVP аналога популярной соц. сети для обмена фотографиями
+MVP analogue of a popular social network to share photos. Double click likes and "also liked by" features added.
 
 ## Ссылка на приложение:
 
-https::
+https:: local repository
 
 ## Первоначальная оценка
 
-ХХХХ часов
+50 hrs
 
 ## Фактически затраченное время
 
-YYYY часов
+35 hrs
